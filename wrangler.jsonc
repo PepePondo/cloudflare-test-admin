@@ -7,9 +7,7 @@
 	"name": "cloudflare-test-admin",
 	"main": ".svelte-kit/cloudflare/_worker.js",
 	"compatibility_date": "2025-08-26",
-	"compatibility_flags": [
-		"nodejs_als"
-	],
+	"compatibility_flags": ["nodejs_als"],
 	"assets": {
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"
@@ -17,9 +15,13 @@
 	"observability": {
 		"enabled": true
 	},
-	{
-		""
-	}
+	"d1_databases": [
+		{
+			"binding": "offstageDB",
+			"database_name": "offstage-db",
+			"database_id": "c2337961-40af-461a-b0e1-4497d09c8548"
+		}
+	]
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
